@@ -1,5 +1,20 @@
-import 'package:dart_course_2021_autumn/dart_course_2021_autumn.dart' as dart_course_2021_autumn;
+import 'package:dart_course_2021_autumn/dart_course_2021_autumn.dart'
+    as dart_course_2021_autumn;
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_course_2021_autumn.calculate()}!');
+void main() {
+  Student student = Student();
+  student.printInfo();
+}
+
+class Student {
+  String _name;
+  int age;
+  String gender;
+  int id;
+  void printInfo() {
+    print('name : $sname');
+  }
+
+  String get sname => _name;
+  set sname(str) => _name = str;
 }
