@@ -1,7 +1,14 @@
-void main() {
-  Student s = Student.primary(name: 'zain');
+import 'data_collections.dart';
+import 'kabour.dart';
 
-  Student std = Student('secondary', name: 'ahmad');
+void main() {
+  // Student s = Student.primary(name: 'zain');
+  var res = Kabour.kabourFun('flutter');
+  var res1 = Kabour.conv(input: 'xyz');
+  // Student std = Student('secondary', name: 'ahmad');
+
+  // User u = User();
+  // u.level;
 }
 
 class Student {
