@@ -6,8 +6,8 @@ version: 1.0.0
 environment:
   sdk: '>=2.7.0 <3.0.0'
 
-# dependencies:
-#   path: ^1.8.0
+dependencies:
+  http:
 
 dev_dependencies:
   pedantic: ^1.10.0
