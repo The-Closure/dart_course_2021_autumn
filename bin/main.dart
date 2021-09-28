@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 
 void main() {
@@ -8,12 +10,11 @@ void main() {
 
 class requestClass {
   static Future<String> getData() async {
-    Map<String, dynamic> data = Map();
-    var a = 3;
-    String date = '';
-    http.Response response = await http.get(Uri.parse(
-        'http://localhost:8080/api/v3/mirror/vj6j6spd0ibogcfr3mjan1jqp4/pics'));
+    http.Response response = await http.get(
+        Uri.parse('http://164.68.96.30:7070/v2/api/posts/getpost?postID=200'));
     print(response.statusCode);
+    Map<String, dynamic> data = json.decode(response.body) as Map;
+    print(data['likeState']);
     return response.body;
   }
 }
