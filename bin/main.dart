@@ -8,6 +8,7 @@ void main() {
 
 class requestClass {
   static Future<String> getData() async {
+    Map<String, dynamic> data = Map();
     var a = 3;
     String date = '';
     http.Response response = await http.get(Uri.parse(
